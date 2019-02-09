@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="inventory.css">
+    <title>Inventory</title>
+</head>
+<body>
+    <header>
+        <h1>Inventory</h1>
+    </header>
+    <main>
+        <section>
+            <label for="filter">Filter by Category</label>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="dairy">Dairy</option>
+                <option value="meat">Meat</option>
+                <option value="prepared">Prepared</option>
+                <option value="vegetables">Vegetables</option>
+            </select>
+        </section>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th>Unit Price</th>
+                        <th>Quantity</th>
+                        <th>Delete</th>
+                        <th>Update</th>
+                    </tr>
+                </thead>
+                <tbody id="inventory">
+                    
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <p>
+                <a href="create-item.html" id="create">Create an Item</a>
+            </p>
+        </section>
+        <section>
+            <table>
+                <thead>
+                    <th>Dairy</th>
+                    <th>Meat</th>
+                    <th>Prepared</th>
+                    <th>Vegetables</th>
+                </thead>
+                <tbody id="totals"></tbody>
+            </table>
+        </section>
+    </main>
+    <script type="module" src="./src/inventory.js"></script>
+</body>
+</html>
